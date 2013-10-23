@@ -1,13 +1,13 @@
 # ofxSegmentDisplay
 by nariakiiwatani
 
-## can draw LED segment display style charactors
+## can draw LED segment display style characters
 ![screenshot](/capture.png)
+![screenshot2](/all_char.png)
 
 ## Currently supported...
 - 7 segment display
-- Numbers, dot, minus 
+- all ascii characters
 
 ## Will support...
 - 14 and 16 segment ones
-- Alphabets
