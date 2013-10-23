@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08711A0BF984B97F540D677A /* ofxSegmentDisplay_.txt in Sources */ = {isa = PBXBuildFile; fileRef = 7AC88A4F07E133A89142D5AF /* ofxSegmentDisplay_.txt */; };
 		1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 907C5B5E104864A2D3A25745 /* ofxToggle.cpp */; };
 		2D8935CD90752A7DA88718C8 /* ofxParamVecSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26E6C724561132BF08AC4EA7 /* ofxParamVecSlider.cpp */; };
 		3396ABF9168D796A222E6307 /* ofxSegmentDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E48EF2CC1631B6798D0B3AD /* ofxSegmentDisplay.cpp */; };
@@ -89,7 +88,6 @@
 		5EDB1BD9B2E793A373707B05 /* ofxParamPanel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxParamPanel.h; path = ../../../addons/ofxParamEdit/src/ofxParamPanel.h; sourceTree = SOURCE_ROOT; };
 		68C723E98941B208F54E7D69 /* ofxParamColorSlider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxParamColorSlider.h; path = ../../../addons/ofxParamEdit/src/ofxParamColorSlider.h; sourceTree = SOURCE_ROOT; };
 		78D67A00EB899FAC09430597 /* ofxLabel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxLabel.cpp; path = ../../../addons/ofxGui/src/ofxLabel.cpp; sourceTree = SOURCE_ROOT; };
-		7AC88A4F07E133A89142D5AF /* ofxSegmentDisplay_.txt */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 30; name = ofxSegmentDisplay_.txt; path = ../../../addons/ofxSegmentDisplay/src/ofxSegmentDisplay_.txt; sourceTree = SOURCE_ROOT; };
 		7E48EF2CC1631B6798D0B3AD /* ofxSegmentDisplay.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxSegmentDisplay.cpp; path = ../../../addons/ofxSegmentDisplay/src/ofxSegmentDisplay.cpp; sourceTree = SOURCE_ROOT; };
 		7FBFFA4B2448B77DB7195242 /* ofxParamSlider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxParamSlider.cpp; path = ../../../addons/ofxParamEdit/src/ofxParamSlider.cpp; sourceTree = SOURCE_ROOT; };
 		802251BAF1B35B1D67B32FD0 /* ofxSliderGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSliderGroup.cpp; path = ../../../addons/ofxGui/src/ofxSliderGroup.cpp; sourceTree = SOURCE_ROOT; };
@@ -215,7 +213,6 @@
 			children = (
 				7E48EF2CC1631B6798D0B3AD /* ofxSegmentDisplay.cpp */,
 				0E4FF9B7B77F71C7EDF203F9 /* ofxSegmentDisplay.h */,
-				7AC88A4F07E133A89142D5AF /* ofxSegmentDisplay_.txt */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -432,7 +429,6 @@
 				BFAE0BAF3A13D0CBD7534BDE /* ofxParamToggle.cpp in Sources */,
 				2D8935CD90752A7DA88718C8 /* ofxParamVecSlider.cpp in Sources */,
 				3396ABF9168D796A222E6307 /* ofxSegmentDisplay.cpp in Sources */,
-				08711A0BF984B97F540D677A /* ofxSegmentDisplay_.txt in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
