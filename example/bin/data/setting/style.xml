@@ -1,12 +1,13 @@
 <style>
-	<align>1</align>
+	<align>0</align>
 	<type>0</type>
-	<width>108</width>
-	<height>194</height>
-	<padding>3.06122, 3.06122</padding>
-	<skew>40</skew>
-	<segment_margin>3</segment_margin>
-	<segment_width>24</segment_width>
+	<width>60</width>
+	<height>128</height>
+	<padding>9.18367, 16.3265</padding>
+	<skew>9</skew>
+	<segment_margin>1</segment_margin>
+	<segment_width>10</segment_width>
 	<dot>1</dot>
 <style/>
+<refresh>0</refresh>
 </style>

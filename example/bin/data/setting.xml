@@ -1,9 +1,9 @@
 <setting>
 	<refresh>0</refresh>
-	<interval>174</interval>
-	<pos>992.653, 384</pos>
-	<color>255, 255, 0, 255</color>
-	<blank_color>206, 209, 222, 255</blank_color>
+	<interval>64</interval>
+	<pos>0, 0</pos>
+	<color>27, 255, 188, 255</color>
+	<blank_color>57, 57, 98, 255</blank_color>
 	<number>49.5</number>
 	<style>1</style>
 <setting/>

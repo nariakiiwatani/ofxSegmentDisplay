@@ -52,6 +52,7 @@ private:
 	void drawDigit(unsigned int bit_flags, const ofColor& color);
 	void refresh();
 	unsigned int getBitFlags(char ch, bool with_dot);
+	bool hasDot(char ch);
 };
 
 class UnitArray
@@ -65,6 +66,7 @@ public:
 public:
 	void setUnitInterval(float interval) { unit_interval_=interval; }
 	void setAlign(Align align) { align_=align; }
+	void setCombineDot(bool is_combine_dot) { is_combine_dot_=is_combine_dot; }
 
 	Unit::Style& getUnitStyleRef() { return unit_.getStyleRef(); }
 	Unit::DotStyle& getUnitDotStyleRef() { return unit_.getDotStyleRef(); }
@@ -80,6 +82,7 @@ private:
 	Unit unit_;
 	float unit_interval_;
 	Align align_;
+	bool is_combine_dot_;
 };
 }
 /* EOF */
