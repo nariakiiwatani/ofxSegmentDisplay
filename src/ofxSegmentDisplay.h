@@ -53,6 +53,21 @@ private:
 	void refresh();
 	unsigned int getBitFlags(char ch, bool with_dot);
 	bool hasDot(char ch);
+	
+	template<Type type> void refreshByType(){}
+	template<Type type> unsigned int getBitFlagsByType(char ch, bool with_dot){ return with_dot?DOT_BIT:0; }
+	template<Type type> bool hasDotByType(char ch){ return false; }
+	template<Type type> int usedSegmentNumByType(){ return 0; }
+private:
+	unsigned int DOT_BIT = 0x80000000;
+	static void copyPath(ofPath& dst, const ofPath& src)
+	{
+		dst.getCommands() = src.getCommands();
+	}
+	static ofVec2f skew(float x, float y, float skew_ratio)
+	{
+		return ofVec2f(x-y*skew_ratio, y);
+	}
 };
 
 class UnitArray
