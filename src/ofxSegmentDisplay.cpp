@@ -34,10 +34,10 @@ void Unit::drawDigit(unsigned int bit_flags)
 		ofVec2f pos = ofVec2f(style_.width-style_.padding.x, style_.height-style_.padding.y) + dot_style_.relative_pos;
 		switch(dot_style_.shape) {
 			case DotStyle::ELLIPSE:
-				ofEllipse(pos, dot_style_.size.x, dot_style_.size.y);
+				ofDrawEllipse(pos, dot_style_.size.x, dot_style_.size.y);
 				break;
 			case DotStyle::RECT:
-				ofRect(pos-dot_style_.size/2.f, dot_style_.size.x, dot_style_.size.y);
+				ofDrawRectangle(pos-dot_style_.size/2.f, dot_style_.size.x, dot_style_.size.y);
 				break;
 		}
 	}

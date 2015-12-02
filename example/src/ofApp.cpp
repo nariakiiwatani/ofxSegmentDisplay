@@ -1,4 +1,4 @@
-#include "testApp.h"
+#include "ofApp.h"
 
 namespace {
 	float unit_interval_;
@@ -10,7 +10,7 @@ namespace {
 	bool is_combine_dot = true;
 }
 //--------------------------------------------------------------
-void testApp::setup(){
+void ofApp::setup(){
 	ofxSegmentDisplay::Unit::Style& style = display_.getUnitStyleRef();
 	ofxSegmentDisplay::Unit::DotStyle& dot_style = display_.getUnitDotStyleRef();
 
@@ -48,14 +48,14 @@ void testApp::setup(){
 }
 
 //--------------------------------------------------------------
-void testApp::update(){
+void ofApp::update(){
 	display_.setUnitInterval(unit_interval_);
 	display_.setAlign(align_);
 	display_.setCombineDot(is_combine_dot);
 }
 
 //--------------------------------------------------------------
-void testApp::draw(){
+void ofApp::draw(){
 	ofBackground(0);
 	float line_height = display_.getUnitStyleRef().height;
 	ofPushMatrix();
@@ -96,7 +96,7 @@ void testApp::draw(){
 }
 
 //--------------------------------------------------------------
-void testApp::keyPressed(int key){
+void ofApp::keyPressed(int key){
 	switch(key) {
 		case OF_KEY_RETURN:
 			param_.isOpen()?param_.close():param_.open();
@@ -105,41 +105,41 @@ void testApp::keyPressed(int key){
 }
 
 //--------------------------------------------------------------
-void testApp::keyReleased(int key){
+void ofApp::keyReleased(int key){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseMoved(int x, int y ){
+void ofApp::mouseMoved(int x, int y ){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseDragged(int x, int y, int button){
+void ofApp::mouseDragged(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mousePressed(int x, int y, int button){
+void ofApp::mousePressed(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseReleased(int x, int y, int button){
+void ofApp::mouseReleased(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::windowResized(int w, int h){
+void ofApp::windowResized(int w, int h){
 
 }
 
 //--------------------------------------------------------------
-void testApp::gotMessage(ofMessage msg){
+void ofApp::gotMessage(ofMessage msg){
 
 }
 
 //--------------------------------------------------------------
-void testApp::dragEvent(ofDragInfo dragInfo){ 
+void ofApp::dragEvent(ofDragInfo dragInfo){ 
 
 }
