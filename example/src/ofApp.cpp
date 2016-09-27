@@ -8,6 +8,7 @@ namespace {
 	ofColor color_;
 	ofColor blank_color_;
 	bool is_combine_dot = true;
+	bool all_char = true;
 }
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -19,6 +20,7 @@ void ofApp::setup(){
 	param_.addVecSlider("pos", pos_, ofVec2f(0,0), ofVec2f(1024,768));
 	param_.addColorSlider("color", color_, ofColor(0,0,0,0), ofColor(255,255,255,255));
 	param_.addColorSlider("blank color", blank_color_, ofColor(0,0,0,0), ofColor(255,255,255,255));
+	param_.addToggle("all char", all_char);
 	param_.addSlider("number", number_, -90.f, 90.f);
 	param_.beginGroup("style");
 	param_.addToggle("refresh", style.updated);
@@ -62,32 +64,40 @@ void ofApp::draw(){
 	ofTranslate(pos_);
 
 	if(blank_color_.a > 0) {
-		display_.draw(" !\"#$%&'()*+,-./", color_, blank_color_);
-		ofTranslate(0,line_height);
-		display_.draw("0123456789:;<=>?", color_, blank_color_);
-		ofTranslate(0,line_height);
-		display_.draw("@ABCDEFGHIJKLMNO", color_, blank_color_);
-		ofTranslate(0,line_height);
-		display_.draw("PQRSTUVWXYZ[\\]^_", color_, blank_color_);
-		ofTranslate(0,line_height);
-		display_.draw("`abcdefghijklmno", color_, blank_color_);
-		ofTranslate(0,line_height);
-		display_.draw("pqrstuvwxyz{|}~", color_, blank_color_);
-//		display_.draw(number_, color_, blank_color_, 2);
+		if(all_char) {
+			display_.draw(" !\"#$%&'()*+,-./", color_, blank_color_);
+			ofTranslate(0,line_height);
+			display_.draw("0123456789:;<=>?", color_, blank_color_);
+			ofTranslate(0,line_height);
+			display_.draw("@ABCDEFGHIJKLMNO", color_, blank_color_);
+			ofTranslate(0,line_height);
+			display_.draw("PQRSTUVWXYZ[\\]^_", color_, blank_color_);
+			ofTranslate(0,line_height);
+			display_.draw("`abcdefghijklmno", color_, blank_color_);
+			ofTranslate(0,line_height);
+			display_.draw("pqrstuvwxyz{|}~", color_, blank_color_);
+		}
+		else {
+			display_.draw(number_, color_, blank_color_, 2);
+		}
 	}
 	else {
-		display_.draw(" !\"#$%&'()*+,-./", color_);
-		ofTranslate(0,line_height);
-		display_.draw("0123456789:;<=>?", color_);
-		ofTranslate(0,line_height);
-		display_.draw("@ABCDEFGHIJKLMNO", color_);
-		ofTranslate(0,line_height);
-		display_.draw("PQRSTUVWXYZ[\\]^_", color_);
-		ofTranslate(0,line_height);
-		display_.draw("`abcdefghijklmno", color_);
-		ofTranslate(0,line_height);
-		display_.draw("pqrstuvwxyz{|}~", color_);
-//		display_.draw(number_, color_, 2);
+		if(all_char) {
+			display_.draw(" !\"#$%&'()*+,-./", color_);
+			ofTranslate(0,line_height);
+			display_.draw("0123456789:;<=>?", color_);
+			ofTranslate(0,line_height);
+			display_.draw("@ABCDEFGHIJKLMNO", color_);
+			ofTranslate(0,line_height);
+			display_.draw("PQRSTUVWXYZ[\\]^_", color_);
+			ofTranslate(0,line_height);
+			display_.draw("`abcdefghijklmno", color_);
+			ofTranslate(0,line_height);
+			display_.draw("pqrstuvwxyz{|}~", color_);
+		}
+		else {
+			display_.draw(number_, color_, 2);
+		}
 	}
 	ofPopMatrix();
 	if(param_.isOpen()) {
