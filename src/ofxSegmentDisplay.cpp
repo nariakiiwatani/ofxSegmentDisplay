@@ -41,7 +41,6 @@ void Unit::drawDigit(unsigned int bit_flags)
 				break;
 		}
 	}
-	return 0;
 }
 
 bool Unit::hasDot(char ch)
